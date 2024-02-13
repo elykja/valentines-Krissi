@@ -63,7 +63,6 @@ function peopleButtonClick() {
     document.getElementById('peoplePage').style.display = 'block';
 }
 
-
 // Function to handle the Jeaa ^^ and Naa ^^ buttons
 function jeaaNaaButtonClick(destination) {
     // Hide the current section
