@@ -53,5 +53,3 @@ function jeaaNaaButtonClick(destination) {
     // Show the specified destination section
     document.getElementById(destination).style.display = 'block';
 }
-
-// Existing code ...
