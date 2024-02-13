@@ -21,18 +21,15 @@ function submitResponse(response) {
     // Log responses to the console (replace with actual server submission)
     console.log('User selected:', response);
 
-    if (response === 'Single') {
-        // Hide the current section
-        document.getElementById('messageContainer').style.display = 'none';
-        
-        // Show the Single page
-        document.getElementById('singlePage').style.display = 'block';
-    } else if (response === 'Taken' || response === 'Other') {
-        // Hide the current section
-        document.getElementById('messageContainer').style.display = 'none';
-        
-        // Show the Taken or Others page
+    // Hide the current section
+    document.getElementById('messageContainer').style.display = 'none';
+
+    // Show the appropriate page based on the response
+    if (response === 'Single' || response === 'Taken' || response === 'Other') {
         document.getElementById('takenOthersPage').style.display = 'block';
+    } else {
+        // If you have specific handling for other responses, add it here
+        console.log('Unhandled response:', response);
     }
 }
 
