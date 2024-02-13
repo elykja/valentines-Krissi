@@ -7,58 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Start Page -->
-    <div id="startPage" class="container">
-        <img src="https://imgur.com/a/GKbjG4O" alt="Above Title Image">
-        <h1>Will you be my Valentine?</h1>
-        <button id="yesBtn">Yes</button>
-        <button id="noBtn">No</button>
+    <!-- Existing code ... -->
+
+    <!-- Page after answering Single -->
+    <div id="singlePage" class="container" style="display:none;">
+        <h1>Ohh Okayy, I'm sorry if I misunderstood something hehe</h1>
     </div>
 
-    <!-- Message Container (2nd Page) -->
-    <div id="messageContainer" class="container" style="display:none;">
-        <img src="https://imgur.com/a/C567QSI" alt="Your Image">
-        <p>I have this form that I want to submit for an organization in our university so that I get food, just wondering what I should put o-o I have 0 brain cells so can you decide it for me?</p>
-        <button class="responseBtn" onclick="teleport('thankyouPage2')">Single</button>
-        <button class="responseBtn" onclick="teleport('questionPage')">Taken</button>
-        <button class="responseBtn" onclick="teleport('questionPage')">Other (please specify)</button>
-        <textarea id="otherResponse" placeholder="Specify here (if applicable)"></textarea>
+    <!-- Page after answering Taken or Others -->
+    <div id="takenOthersPage" class="container" style="display:none;">
+        <h1>Soo, Whaat are we? o-o</h1>
+        <button class="teleportBtn" onclick="teleport('questionPage')">Humans</button>
+        <button class="teleportBtn" onclick="heheButtonClick()">Hehe ^-^</button>
+        <button class="teleportBtn" onclick="teleport('questionPage')">People</button>
     </div>
 
-<!-- In between 2nd and 3rd Pages -->
-<div id="questionPage" class="container" style="display:none;">
-    <h1>Soo what are we o-o?xDhm,mm</h1>
-    <button class="teleportBtn" onclick="teleport('startPage')">Humans</button>
-    <button class="teleportBtn" onclick="teleport('questionPage2')">Hehe ^-^</button>
-    <button class="teleportBtn" onclick="teleport('startPage')">People</button>
-</div>
-
-    <!-- Thank You Page (6th Page) -->
-    <div id="thankYouPage" class="container" style="display:none;">
-        <h1>Thank you for answering ^-^</h1>
+    <!-- Page after choosing Hehe ^-^ -->
+    <div id="hehePage" class="container" style="display:none;">
+        <h1>Really? o-o Soo you're saying...</h1>
+        <button class="teleportBtn" onclick="jeaaNaaButtonClick('thankYouPage')">Jeaa ^^</button>
+        <button class="teleportBtn" onclick="jeaaNaaButtonClick('sorryPage')">Naa ^^</button>
     </div>
 
-    <!-- Question1 (7th Page)-->
-<div id="questionPage2" class="container" style="display:none;">
-    <h1>Oh really? so you meann??o</h1>
-    <button class="teleportBtn" onclick="teleport('thankyouPage3')">jeaa ^^</button>
-    <button class="teleportBtn" onclick="teleport('thankyouPage2')">Naa ^^</button>
-</div>
-
-        <!-- Thank You Page (8th Page) -->
-    <div id="thankYouPage2" class="container" style="display:none;">
-        <h1>Ohh okayy ^^</h1>
+    <!-- Page after choosing Naa ^^ -->
+    <div id="sorryPage" class="container" style="display:none;">
+        <h1>Ohh okayy, I'm sorry if I misunderstood something ^^</h1>
     </div>
 
-        <!-- Thank You Page (9th Page) -->
-    <div id="thankYouPage3" class="container" style="display:none;">
-        <h1>Thank you for answering ^-^</h1>
-    </div>
-
-     <!-- Thank You Page (10th Page) -->
-    <div id="thankYouPage3" class="container" style="display:none;">
-        <h1>Thank you for answering ^-^</h1>
-    </div>
+    <!-- Existing code ... -->
     <script src="script.js"></script>
 </body>
 </html>
