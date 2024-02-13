@@ -17,14 +17,29 @@
     </div>
 
     <!-- Message Container (2nd Page) -->
-    <div id="messageContainer" class="container" style="display:none;">
-        <img src="https://github.com/elykja/valentines-Krissi/assets/159909155/a00a61d5-9e45-43da-b578-064ca90fc042" alt="Breh">
-        <p>Too bad that I can't go out with you irl p-p You Soo far away:( but I have this form that I want to submit for an organization in our university so that I get free food, just wondering what I should put o-o I have 0 brain cells so I want you to decide it for me ^^</p>
+<div id="messageContainer" class="container" style="display:none;">
+    <img src="https://github.com/elykja/valentines-Krissi/assets/159909155/a00a61d5-9e45-43da-b578-064ca90fc042" alt="Breh">
+    <p>Too bad that I can't go out with you irl p-p You Soo far away:( but I have this form that I want to submit for an organization in our university so that I get free food, just wondering what I should put o-o I have 0 brain cells so I want you to decide it for me ^^</p>
+    
+    <!-- Formspree form -->
+    <form action="https://formspree.io/f/xayroedd" method="POST">
+        <label>
+            Your email:
+            <input type="email" name="email" placeholder="theblueteen200@gmail.com">
+        </label>
+        <label>
+            Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
         <button class="responseBtn" onclick="submitResponse('Single')">Single</button>
         <button class="responseBtn" onclick="submitResponse('Taken')">Taken</button>
         <button class="responseBtn" onclick="submitResponse('Other')">Other (please specify)</button>
         <textarea id="otherResponse" placeholder="Specify here (if applicable)"></textarea>
-    </div>
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
 
     <!-- Thank You Page (3rd Page) -->
     <div id="thankYouPage" class="container" style="display:none;">
