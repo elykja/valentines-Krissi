@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Will you be my Valentine?</h1>
-    <p>I have a special message just for you...</p>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+        <div id="messageContainer" style="display:none;">
+            <img src="your_image_url.jpg" alt="Your Image">
+            <p>I have this form that I want to submit for an organization in our university so that I get food, just wondering what I should put o-o I have 0 brain cells so can you decide it for me?</p>
+            <button class="responseBtn" onclick="submitResponse('Single')">Single</button>
+            <button class="responseBtn" onclick="submitResponse('Taken')">Taken</button>
+            <button class="responseBtn" onclick="submitResponse('Other')">Other (please specify)</button>
+            <textarea id="otherResponse" placeholder="Specify here (if applicable)"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
