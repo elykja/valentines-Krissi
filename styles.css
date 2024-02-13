@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFC0CB;
+    background-color: #f8f8f8;
     margin: 0;
     display: flex;
     align-items: center;
@@ -33,3 +33,5 @@ textarea {
 #noBtn:hover {
     display: none;
 }
+
+/* Existing code ... */
