@@ -4,7 +4,7 @@ document.getElementById('yesBtn').addEventListener('click', function() {
     document.getElementById('startPage').style.display = 'none';
 
     // Show the next section
-    document.getElementById('questionPage').style.display = 'block';
+    document.getElementById('messageContainer').style.display = 'block';
 });
 
 // Function to handle teleportation
