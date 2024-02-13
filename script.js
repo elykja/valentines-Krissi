@@ -1,10 +1,9 @@
 document.getElementById('yesBtn').addEventListener('click', function() {
-    document.getElementById('messageContainer').style.display = 'block';
-});
+    // Hide the current section
+    document.getElementById('startPage').style.display = 'none';
 
-document.getElementById('noBtn').addEventListener('mouseover', function() {
-    // Optional: Hide the 'No' button on hover
-    this.style.display = 'none';
+    // Show the next section
+    document.getElementById('messageContainer').style.display = 'block';
 });
 
 function submitResponse(response) {
@@ -18,6 +17,9 @@ function submitResponse(response) {
         console.log('Other response:', otherResponse);
     }
 
-    // You can send the responses to your server using AJAX/fetch or any other method.
-    // For now, we're just logging them to the console.
+    // Hide the current section
+    document.getElementById('messageContainer').style.display = 'none';
+
+    // Show the thank you page
+    document.getElementById('thankYouPage').style.display = 'block';
 }
