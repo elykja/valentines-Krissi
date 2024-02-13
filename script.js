@@ -45,6 +45,15 @@ function heheButtonClick() {
     document.getElementById('hehePage').style.display = 'block';
 }
 
+// Function to handle the Humans and People button click
+function humansPeopleButtonClick() {
+    // Hide the current section
+    document.getElementById('takenOthersPage').style.display = 'none';
+
+    // Show the Humans and People page
+    document.getElementById('humansPeoplePage').style.display = 'block';
+}
+
 // Function to handle the Jeaa ^^ and Naa ^^ buttons
 function jeaaNaaButtonClick(destination) {
     // Hide the current section
