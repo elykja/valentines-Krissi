@@ -21,23 +21,37 @@ function submitResponse(response) {
     // Log responses to the console (replace with actual server submission)
     console.log('User selected:', response);
 
-    if (response === 'Other') {
-        const otherResponse = document.getElementById('otherResponse').value;
-        console.log('Other response:', otherResponse);
+    if (response === 'Single') {
+        // Hide the current section
+        document.getElementById('messageContainer').style.display = 'none';
+        
+        // Show the Single page
+        document.getElementById('singlePage').style.display = 'block';
+    } else if (response === 'Taken' || response === 'Other') {
+        // Hide the current section
+        document.getElementById('messageContainer').style.display = 'none';
+        
+        // Show the Taken or Others page
+        document.getElementById('takenOthersPage').style.display = 'block';
     }
-
-    // Hide the current section
-    document.getElementById('messageContainer').style.display = 'none';
-
-    // Show the question page
-    document.getElementById('questionPage').style.display = 'block';
 }
 
-// Function to handle the thank you page
-function showThankYou() {
+// Function to handle the Hehe ^-^ button click
+function heheButtonClick() {
     // Hide the current section
-    document.getElementById('questionPage').style.display = 'none';
+    document.getElementById('takenOthersPage').style.display = 'none';
 
-    // Show the thank you page
-    document.getElementById('thankYouPage').style.display = 'block';
+    // Show the Hehe ^-^ page
+    document.getElementById('hehePage').style.display = 'block';
 }
+
+// Function to handle the Jeaa ^^ and Naa ^^ buttons
+function jeaaNaaButtonClick(destination) {
+    // Hide the current section
+    document.getElementById('hehePage').style.display = 'none';
+
+    // Show the specified destination section
+    document.getElementById(destination).style.display = 'block';
+}
+
+// Existing code ...
