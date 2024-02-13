@@ -45,14 +45,24 @@ function heheButtonClick() {
     document.getElementById('hehePage').style.display = 'block';
 }
 
-// Function to handle the Humans and People button click
-function humansPeopleButtonClick() {
+// Function to handle the Humans button click
+function humansButtonClick() {
     // Hide the current section
     document.getElementById('takenOthersPage').style.display = 'none';
 
-    // Show the Humans and People page
-    document.getElementById('humansPeoplePage').style.display = 'block';
+    // Show the Humans page
+    document.getElementById('humansPage').style.display = 'block';
 }
+
+// Function to handle the People button click
+function peopleButtonClick() {
+    // Hide the current section
+    document.getElementById('takenOthersPage').style.display = 'none';
+
+    // Show the People page
+    document.getElementById('peoplePage').style.display = 'block';
+}
+
 
 // Function to handle the Jeaa ^^ and Naa ^^ buttons
 function jeaaNaaButtonClick(destination) {
